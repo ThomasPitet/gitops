@@ -123,8 +123,8 @@ puis recommencez le `git push`.
 
 ## Checklist de fin de TP
 
-- [ ] `hello.yml` et `ci.yml` existent et fonctionnent
-- [ ] J'ai provoqué et corrigé un échec de CI
-- [ ] Ma PR a été fusionnée avec la CI verte
-- [ ] Le badge s'affiche dans mon README
-- [ ] J'ai mes 7 captures TP1-1 à TP1-7 et mes réponses aux questions
+- [X] `hello.yml` et `ci.yml` existent et fonctionnent
+- [X] J'ai provoqué et corrigé un échec de CI
+- [X] Ma PR a été fusionnée avec la CI verte
+- [X] Le badge s'affiche dans mon README
+- [X] J'ai mes 7 captures TP1-1 à TP1-7 et mes réponses aux questions
