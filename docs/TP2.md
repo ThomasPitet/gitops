@@ -11,9 +11,9 @@ cache, protection de la branche `main`, travail à deux sur un même dépôt et 
 
 ## Avant de commencer
 
-- [ ] Votre TP1 est terminé : `ci.yml` fonctionne et `main` est à jour (`git switch main && git pull`)
-- [ ] Environnement `.venv` activé, puis `pip install -r requirements-dev.txt` (ajoute `black`)
-- [ ] Travaillez sur une branche : `git switch -c tp2`
+- [X] Votre TP1 est terminé : `ci.yml` fonctionne et `main` est à jour (`git switch main && git pull`)
+- [X] Environnement `.venv` activé, puis `pip install -r requirements-dev.txt` (ajoute `black`)
+- [X] Travaillez sur une branche : `git switch -c tp2`
 - [ ] Vous avez un **binôme** pour la partie 4 (sinon, voir « Si vous êtes seul »)
 
 ---
