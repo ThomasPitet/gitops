@@ -1,5 +1,3 @@
-
-
 ![CI](https://github.com/ThomasPitet/gitops/actions/workflows/CI.yml/badge.svg)
 
 # tasks-api : fil rouge du cours GitOps & CI/CD
