@@ -1,6 +1,6 @@
 # Journal des changements
 
-## Non publi�
+## Non publié
 
-- Ajout de la fonctionnalit� A.
-- Ajout de la fonctionnalit� B.
+- Ajout de la fonctionnalité A.
+- Ajout de la fonctionnalité B.
