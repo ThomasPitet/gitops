@@ -2,4 +2,5 @@
 
 ## Non publié
 
+- Ajout de la fonctionnalité A.
 - Ajout de la fonctionnalité B.
