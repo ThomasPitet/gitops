@@ -66,7 +66,7 @@ cache, protection de la branche `main`, travail à deux sur un même dépôt et 
 
 ---
 
-## Partie 4 : Pull request croisée et conflit (45 min)
+## Partie 4 : Pull request croisée "fet conflit (45 min)
 
 **Binôme A et binôme B travaillent sur le dépôt de A.** A ajoute B comme collaborateur
 (Settings → Collaborators), B accepte l'invitation, puis clone le dépôt de A.
@@ -97,7 +97,7 @@ git push
 
 ---
 
-## Partie 5 : Un secret dans le pipeline (20 min)
+## Partie 5 : Un ecret dans le pipeline (20 min)
 
 1. Sur GitHub : **Settings → Secrets and variables → Actions** : créez un **secret** `DEMO_TOKEN` (valeur de votre choix, par exemple `abc123`).
    Dans l'onglet **Variables**, créez une variable `APP_ENV` = `staging`.

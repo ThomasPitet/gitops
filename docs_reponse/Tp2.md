@@ -28,3 +28,13 @@
   * **Un artefact, c'est quoi ?**
 
   Un **fichier ou dossier produit**pendant le workflow (ex. rapport de couverture, build, binaire) qui est **sauvegardé sur GitHub**pour être consulté ou téléchargé après l'exécution.
+  ![1793714553673](image/Tp2/1793714553673.png)
+
+![1793715494069](image/Tp2/1793715494069.png)
+
+
+![1793715790501](image/Tp2/1793715790501.png)
+
+**Question :** Pourquoi interdire de pousser directement sur `main` ?
+
+Pour protéger la branche de production contre le code cassé, et forcer le passage par la CI et la revue de code avant toute fusion.
