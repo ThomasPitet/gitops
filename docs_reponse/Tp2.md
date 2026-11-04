@@ -4,8 +4,6 @@
 
 **Questions :** Quelle différence entre un linter (flake8) et un formateur (black) ? Pourquoi séparer `lint` et `test` en deux jobs ?
 
-
-
 * **Flake8 (linter) :**vérifie les erreurs de code et de style (ex : variables inutilisées).
 * **Black (formateur) :**reformate automatiquement l'agencement du code (espaces, retours à la ligne).
 
@@ -13,9 +11,7 @@
 
  Pour les exécuter en parallèle et identifier immédiatement si le problème vient du style (`lint`) ou du fonctionnement (`test`).
 
-
 ![1793711043472](image/Tp2/1793711043472.png)
-
 
 * **Pourquoi tester sur plusieurs versions de Python ?**
 
@@ -32,9 +28,22 @@
 
 ![1793715494069](image/Tp2/1793715494069.png)
 
-
 ![1793715790501](image/Tp2/1793715790501.png)
 
 **Question :** Pourquoi interdire de pousser directement sur `main` ?
 
 Pour protéger la branche de production contre le code cassé, et forcer le passage par la CI et la revue de code avant toute fusion.
+
+![1793780723385](image/Tp2/1793780723385.png)
+
+![1793780739934](image/Tp2/1793780739934.png)
+
+
+
+* **Pourquoi Git ne peut pas résoudre seul ?**
+
+  La même ligne a été modifiée des deux côtés : seul un humain peut choisir quoi garder.
+
+  * **Qu'est-ce qui a vérifié le code ?**
+
+  Le pipeline de CI en relançant les tests automatiques.
