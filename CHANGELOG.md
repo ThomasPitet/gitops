@@ -1,5 +1,6 @@
 # Journal des changements
 
-## Non publié
+## Non publi�
 
-- Version initiale de l'API tasks-api.
+- Ajout de la fonctionnalit� A.
+- Ajout de la fonctionnalit� B.
