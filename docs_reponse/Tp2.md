@@ -38,8 +38,6 @@ Pour protéger la branche de production contre le code cassé, et forcer le pass
 
 ![1793780739934](image/Tp2/1793780739934.png)
 
-
-
 * **Pourquoi Git ne peut pas résoudre seul ?**
 
   La même ligne a été modifiée des deux côtés : seul un humain peut choisir quoi garder.
@@ -47,3 +45,19 @@ Pour protéger la branche de production contre le code cassé, et forcer le pass
   * **Qu'est-ce qui a vérifié le code ?**
 
   Le pipeline de CI en relançant les tests automatiques.
+
+![1793782431073](image/Tp2/1793782431073.png)
+
+
+
+* **Pourquoi GitHub masque-t-il le secret ?**
+
+  Pour éviter toute fuite accidentelle d'informations sensibles dans les logs visibles par d'autres personnes.
+
+  * **Que se passe-t-il si on le commite dans le dépôt ?**
+
+  Il devient visible par tous et reste gravé dans l'historique Git, il faut immédiatement le révoquer.
+
+  * **Secret ou variable : comment choisir ?**
+  * Secret : pour toute donnée sensible ou confidentielle
+  * Variable : pour les configurations non secrètes
