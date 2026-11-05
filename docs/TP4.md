@@ -17,10 +17,10 @@ et Argo CD applique le changement. À la fin, un simple `git tag` déploie une n
 
 ### Les commandes qui changent selon votre système
 
-| Action | macOS / Linux | Windows (PowerShell) |
-|---|---|---|
+| Action               | macOS / Linux                                                                                           | Windows (PowerShell)                                                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Mot de passe Argo CD | `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" \| base64 -d` | `[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String((kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}")))` |
-| Appeler l'API | `curl http://localhost:8081/version` | `curl.exe http://localhost:8081/version` |
+| Appeler l'API        | `curl http://localhost:8081/version`                                                                  | `curl.exe http://localhost:8081/version`                                                                                                                  |
 
 ---
 
@@ -97,7 +97,7 @@ Objectif : un tag `v0.2.0` sur le dépôt applicatif doit aboutir à la nouvelle
    - récupère le dépôt applicatif **et** le dépôt `tasks-config` (`actions/checkout` avec `repository`, `token: ${{ secrets.CONFIG_REPO_TOKEN }}` et `path: config`) ;
    - lance `bash scripts/set-image-tag.sh config/k8s/deployment.yaml "$VERSION"` ;
    - commite et pousse dans `tasks-config`.
-   (Passez la version par une variable d'environnement `VERSION`, **jamais** en écrivant `${{ … }}` directement dans la commande.)
+     (Passez la version par une variable d'environnement `VERSION`, **jamais** en écrivant `${{ … }}` directement dans la commande.)
 5. Créez le tag `v0.2.0`, approuvez la production, et suivez : pipeline → commit automatique dans `tasks-config` → Argo CD → nouveaux pods.
 6. Vérifiez que `/version` répond `0.2.0`.
 
